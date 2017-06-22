@@ -1,0 +1,31 @@
+<!-- Portfolio Summary Cards -->
+<div ngcontroller="portfolioController" class="magic works">
+    <div ng-repeat="project in works" class="mix {{project.mix}} work" data-myorder="{{project.date}}">
+    	<a href="#portfolio/{{project.code}}">
+    		<div>
+            	<div class="proj-title">
+            		{{project.name}}
+            	</div>
+
+            	<div class="proj-img-{{project.code}}">
+					<div class="proj-caption">
+						<div class="proj-summary">
+							<p class="h3_sm">{{project.client}}</p>
+
+							<p>{{project.description}}</p>
+
+							<div class="tag" ng-repeat="category in project.categories">{{category}}</tag>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a href="#portfolio/{{project.code}}">
+			<button class="readmore open-proj">
+				Read More &raquo;
+			</button>
+		</a>
+    </div>
+</div>
+<!-- End of Portfolio Cards -->

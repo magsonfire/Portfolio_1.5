@@ -1,0 +1,29 @@
+<div class="blog">
+	<div class="pbanner-blog">
+		<h1 class="ptitle">Blog</h1>
+	</div>
+
+	<div class="wrapper">
+		<div ng-controller="blogController" id="blog-excerpts">
+			<div ng-repeat="entry in excerpts">
+	        	<h2>{{entry.title}}</h2>
+
+	        	<h5><b>{{entry.date}}</b></h5>
+
+	        	<div class="vis" style="{{entry.ifhidden}} background:none;">
+	        		<img src="{{entry.img}}" alt="{{entry.imgalt}}">
+	        	</div>
+
+	        	<p>{{entry.excerpt}}</p>
+
+	        	<a href="{{entry.link}}" class="readmore" target="_blank">
+	        		<button class="button2">READ MORE   <i class="fa fa-external-link"></i></button>
+	        	</a>
+		    </div>
+	    </div>
+	</div>
+
+	<!-- Google Analytics-->
+	<div ng-include="'app/shared/analytics/ganalytics.html'"></div>
+	<!-- Google Analytics-->
+</div>

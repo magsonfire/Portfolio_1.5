@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Design Elements &amp; Style Guide</title>
+
+    <!-- Import Styles & Scripts -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+
+    <!-- DoubleTap -->
+    <script type="text/javascript" src="js/vendors/DoubleTapToGo.js"></script>
+
+    <!-- Search -->
+    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- Accordion -->
+    <script type="text/javascript" src="js/accordion.js"></script>
+
+    <!-- Slider -->    
+    <link rel="stylesheet" href="css/unslider.css">
+    <script type="text/javascript" src="js/unslider-min.js"></script> 
+
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+    var sc_project=10792317; 
+    var sc_invisible=1; 
+    var sc_security="c32e3ab7"; 
+    var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <!-- End of StatCounter Code for Default Guide -->
+</head>
+
+<div id="wrapper">
+    <body>
+        <header>
+            <div class="course-container">
+                <a href="index.html" alt="Back to Course Homepage"><h1 id="coursename">ANT100</h1></a>
+            </div>
+
+            <!-- TIPUE SEARCH INITIATE -->
+            <script>
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            </script>
+            <!-- END TIPUE SEARCH INITIATE -->
+
+            <div class="search-container">
+                <form action="search.html">
+                    <input type="search" name="q" id="tipue_search_input" placeholder="Is it me you're looking for?" autocomplete="off" required>
+                    <button class="search-button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </header>
+        <!-- END COURSENAME, SEARCH-->
+
+        <nav>
+            <ul>
+                <li><a href="index.html" alt="Course Homepage" title="Course Homepage">
+                    Home
+                    </a></li>
+                <li><a href="lectures.html">Lectures &amp; Readings</a><ul>
+                        <li><a href="lectures.html" alt="Lectures &amp; Readings" title="Readings to do before lecture.">
+                            Lectures &amp; Readings
+                            </a></li>
+                        <li><a href="lecturenotes.html" alt="Lecture Notes &amp; Study Questions" title="Available after each lecture.">
+                            Notes &amp; Study Questions
+                            </a></li>
+                    </ul></li>
+                <li><a href="essay.html">Essay</a><ul>
+                        <li><a href="essay.html"  alt="Assignment Outline">
+                            Assignment Outline
+                            </a></li>
+                        <li><a href="topics.html" alt="Topics List">
+                            Topics List
+                            </a></li>
+                        <li><a href="research.html" alt="Working with the Literature">
+                            Working with the Literature
+                            </a></li>
+                        <li><a href="plagiarism.html" alt="Plagiarism">
+                            Plagiarism
+                            </a></li>
+                        <li><a href="writing.html" alt="Writing Resources">
+                            Writing Resources
+                            </a></li>
+                    </ul></li>
+               <li><a href="tutorials.html">Tutorials</a><ul>
+                        <li><a href="tutorials.html" alt="Tutorial Information" title="Tutorial Information">
+                            Tutorial Information
+                            </a></li>
+                        <li><a href="tutorialschedule.html" alt="Tutorial Schedule">
+                            Tutorial Schedule
+                            </a></li>
+                        <li><a href="tas.html" alt="Teaching Assistants">
+                            Teaching Assistants
+                            </a></li>
+                    </ul></li>
+                <li><a href="evaluation.html">Evaluation &amp; Extensions</a><ul>
+                        <li><a href="evaluation.html" alt="Evaluation Details">
+                            Evaluation
+                            </a></li>
+                        <li><a href="extensions.html" alt="Extensions">
+                            Extensions
+                            </a></li>
+                    </ul></li>
+                <li><a href="contact.html" alt="Contact Information" title="Contact Information">
+                    Contact</a></li>
+                <li><a href="http://portal.utoronto.ca" target="_blank" alt="Go To Portal/Blackboard" title="Go To Portal/Blackboard">
+                    <i class="fa fa-external-link" alt="External Link"></i>
+                    Portal
+                    </a></li>
+            </ul>
+        </nav>
+        <!-- END NAVBAR MENU -->
+
+        <div class="content">
+            <div class="welcome" id="0">
+                <div class="hero" alt="Illustration of Balinese Masks">
+                </div>
+
+                <div class="callout">
+                    <h2>Welcome to the Design Guide</h2>
+
+                    <p>This is a call-out box (styled as class: ".callout"). To change the elements of this web design, see the _design_elements.sass file within /css/. Ensure that you have a program capable of translating SASS into CSS installed.</p>
+                </div>
+            </div>
+            <!-- END WELCOME -->
+
+
+            <!-- BREADCRUMBS NAV -->
+            <div id="breadcrumbs">
+                <a href="index.html">
+                    ANT100 
+                </a>
+                &#187;&nbsp;
+                    Design Guide
+            </div>
+            <!-- END BREADCRUMBS NAV -->
+
+
+            <div class="text-content">
+                <h2 id="1">Design Guide (Heading 2)</h2>
+
+                <h3>Lists (Also Tables of Contents)</h3>
+                    <ul>
+                        <li>This is a numbered list.</li>
+                        <li>Apples</li>
+                        <li>Bananas</li>
+                        <li>Cucumber</li>
+                    </ul>
+
+                    <ol>
+                        <li><a href="#0">Callout &amp; Hero Image</a>
+                        <li><a href="#1">Typography</a><ul>
+                            <li><a href="#2">Warning Text &amp; Special Info Box</a></li>
+                            <li><a href="#3">A Note on Accessibility in Web Design</a></li>
+                        </ul></li>
+                        <li><a href="#4">Buttons!</a></li>
+                        <li><a href="#5">Slider</a></li>
+                        <li><a href="#6">Content Accordion</a></li>
+                        <li><a href="#7">Quiz &amp; Checklist</a><ul>
+                            <li><a href="#7b">Updating the Confirmation Codes</a></li>
+                        </ul></li>
+                        <li><a href="#8">Contact Profiles</a></li>
+                    </ol>
+                
+                <h3>Heading 3</h3>
+                    <p>Paragraph text looks like this. <a href="#">Regular links look like this.</a></p>
+
+                    <p><a href="http://anthropology.utoronto.ca" target="_blank">External links</a> will automatically open in new tabs to ensure that the user's experience of the website remains continuous.</p>
+
+                    <h4>Heading 4</h4>
+
+                    <p class="quote">There is even a quote class! Useful for excerpts, etc.</p>
+                        <p>- Abraham Lincoln</p>               
+
+                <div class="text-content-alt" id="2">
+                    <h3><span class="warning">Notice:</span> Warning Text &amp; Special Info Box</h3>
+
+                    <p>The .warning class is useful for small bits of very urgent text for students to be aware of.</p>
+
+                    <p>This textbox, class .text-content-alt, is a round-cornered info-box/caption that can be inserted into the .text-content box for another level of information hierarchy.</p>
+                </div>
+
+                <h3 id="3">A Note on Accessibility in Web Design</h3>
+
+                    <p>The current design elements and colour palette were designed for maximum visibility, even in users who are visually impaired. In addition, all links and images have alt-text attached so that users using screen-readers can understand what is on the webpage.</p>
+
+                    <p>For future websites based on this design, please ensure that links and images have alt-text.</p>
+
+                <h2 id="4">Buttons!</h2>
+                
+                    <p>Buttons have been designed to be highly distinguishable, easily readable, and colour-coded for ease of access and understanding. These colours are also labelled in _design_elements.sass.</p>
+
+                    <div class="center-me"><i>
+                        <a href="quiz.html" target="_blank"><button class="important">                            
+                            <i class="fa fa-exclamation-circle" alt="Important!"></i>&nbsp; Important
+                        </button></a>
+
+                        <p>The .important class button differs slightly in design to make it stand out even more compared to the other buttons.</p>
+
+                        <a href="#" target="_blank"><button class="interact">
+                            <i class="fa fa-flag" alt="Achievement!"></i>&nbsp; Interact
+                        </button></a>
+
+                        <p>The .interact class button is yellow with a flag to signify an important checkpoint.</p>
+
+                        <a href="#"><button class='download'>
+                            <i class="fa fa-cloud-download" alt="Download"></i>&nbsp; Download
+                            <div class='button-cap'>(PDF, 896Kb)</div>
+                        </button></a>
+
+                        <p>The .download class button is always shown with a .button-cap caption that lists the file type and size. It opens in a new tab. All files for download are located in /files/</p>
+
+                        <a href="#"><button class="readmore">
+                            <i class="fa fa-eye" alt="Read More..."></i>
+                            &nbsp; Read More...
+                        </button></a>
+
+                        <a href="#" target="_blank"><button class="readmore">
+                            <i class="fa fa-external-link" alt="Read More..."></i>
+                            &nbsp; Read More Elsewhere
+                        </button></a>
+
+                        <p>If the .readmore button leads to an external website, the icon becomes the external-link icon.</p>
+                    </i></div>
+
+            </div>
+            <!-- END TEXT-CONTENT -->
+
+            <!-- SLIDER -->
+            <script>$(function() { $('.slider').unslider() 
+                                    animateHeight: True })</script>
+
+            <div class="slider-container" id="5">
+                <h2>Unslider Plugin</h2>
+
+                <div class="slider">
+                    <ul>
+                        <li class="bkg-essay" alt="Photo of a laptop at a workstation">
+                            <div class="slide">
+                                <h3>Unslider is a Third-Party jQuery Plugin</h3>
+                                    
+                                    <p>Unslider is a third-party open-source jQuery slider plugin. It is simple to install and easy to customize.</p>
+
+                                <div class="center-me">
+                                    <a href="http://www.unslider.com"><button class="readmore">
+                                        <i class="fa fa-eye" alt="Read more..."></i>
+                                        &nbsp; Read More
+                                    </button></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="bkg-evaluation" alt="Photo of multilpe-choice test">
+                            <div class="slide">
+                                <h3>How to Change This Image</h3>
+                                    <p>To change this image, upload a new image (at least 400px by 960px) to /img/ named "evaluation.jpg".</p>
+
+                                <div class="center-me">
+                                    <a href="#"><button class="readmore">
+                                        <i class="fa fa-eye" alt="Read more..."></i>
+                                        &nbsp; Read More
+                                    </button></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="bkg-lectures" alt="Photo of hand writing on blackboard">
+                            <div class="slide">
+                                <h3>Background Images Coded in SASS</h3>
+                                    <p>The background images have been coded in the _fonts_andd_colours.sass file; you can change the names of the image files listed here.</p>
+                                <div class="center-me">
+                                    <a href="#"><button class="readmore">
+                                        <i class="fa fa-eye" alt="Read more..."></i>
+                                        &nbsp; Read More
+                                    </button></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END SLIDER -->
+            </div>
+            <!-- END SLIDER CONTAINER -->
+
+            
+        <div class="text-content">
+                <h2 id="6">Content Accordion</h2>
+
+                    <!-- START PROPOSAL ACCORDION -->
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h2>Accordion Title</h2>
+                        </div>
+
+                        <div class="accordion-subsection">
+                            <h2>Accordion Subtitle</h2>
+                        </div>
+
+                        <div class="accordion-toggle">
+                            <h4>Accordion Toggle</h4>
+                        </div>
+
+                        <div class="accordion-content">
+                            <h3>Heading 3</h3>
+                                <p>Text and stuff.</p>
+
+                            <h4>Another Header 4!</h4>
+                                <p>More text</p>
+                        </div>
+
+                        <div class="accordion-toggle">
+                            <h4>Accordion Toggle</h4>
+                        </div>
+
+                        <div class="accordion-content">
+                            <h3>Heading 3</h3>
+                                <p>Text and stuff.</p>
+
+                            <h4>Another Header 4!</h4>
+                                <p>More text</p>
+                        </div>
+
+                        <div class="accordion-toggle">
+                            <h4>Accordion Toggle</h4>
+                        </div>
+
+                        <div class="accordion-content">
+                            <h3>Heading 3</h3>
+                                <p>Text and stuff.</p>
+
+                            <h4>Another Header 4!</h4>
+                                <p>More text</p>
+                        </div>
+
+                    </div>
+                    <!-- END PROPOSAL ACCORDION -->
+
+                <p></p>
+                <h2 id="7">Quiz &amp; Checklist</h2>
+
+                <h3 id="7b">Updating Confirmation Codes</h3>
+                    <p>Ensure that the confirmation codes for these are changed annually. To do so, please speak to Ivan Kalmar or, if there is an issue, please contact the developer: <a href="mailto:mc@maggiecheung.ca">mc@maggiecheung.ca</a>.</p>
+
+            </div>
+            <!-- END TEXT-CONTENT -->
+
+
+            <!-- START LECTURERS -->
+            <div class="text-grey" id="8">
+                <h2>Contact Profiles</h2>
+
+                <h3>How to Edit Photos</h3>
+                    <p>To change the contact's profile picture, simply put their image (at least 80px by 80px) into the /img/profiles/ folder and title it "lastname.jpg". Then, add their last name to the $TAlist or $proflist in the _design_elements.sass file.</p>
+            
+                <div class="profiles">
+                    <div class="profile">
+                        <div class="profilepic pic-lehman" alt="photo of Prof. Lehman">
+                        </div>
+                        <p class="profilecontent">
+                            <a href="mailto:shawn.lehman@utoronto.ca"><b>Shawn Lehman</b></a></br>
+                            Course Coordinator (Fall)</br>
+                            <i>Evolutionary Anthropology</i></br>
+                            Office: AP 404A | 
+                            <a href="http://www.chass.utoronto.ca/anthropology/Faculty/Lehman/index.htm">Website</a>
+                        </p>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profilepic pic-friesen" alt="photo of Prof. Friesen">
+                        </div>
+                        <p class="profilecontent">
+                            <b>Max Friesen</b></br>
+                            Lecturer</br>
+                            <i>Archaeology</i></br>
+                            Office: AP 400 | 
+                            <a href="http://anthropology.utoronto.ca/people/faculty/max-friesen/">Website</a>
+                        </p>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profilepic pic-kalmar" alt="photo of Prof. Kalmar">
+                        </div>
+                        <p class="profilecontent">
+                            <a href="mailto:i.kalmar@utoronto.ca"><b>Ivan Kalmar</b></a></br>
+                            Course Coordinator (Spring)</br>
+                            <i>Linguistic &amp; Sociocultural Anthropology</i></br>
+                            Office: NF 228 | 
+                            <a href="http://projects.chass.utoronto.ca/kalmar/index.html">Website</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- END TEXT-GREY -->
+        </div>
+        <!-- END CONTENT -->
+
+        <!-- BACK TO TOP LINK -->
+        <a href="#top" class="totop">BACK TO TOP</a>
+        <!-- END BACK TO TOP LINK -->
+
+        <footer>
+            <div class='copyright'>
+                &copy;2016 Department of Anthropology, University of Toronto.
+                </br> Design by <a href="http://www.maggiecheung.ca">Maggie Cheung</a>
+            </div>
+            <div class='footernav'>
+                <a href='index.html'>Home</a>
+                     | 
+                <a href='lectures.html'>Lectures &amp; Readings</a>
+                     | 
+                <a href='essay.html'>Essay Assignment</a>
+                     | 
+                <a href='tutorials.html'>Tutorials</a>
+                     | 
+                <a href='evaluation.html'>Evaluation</a>
+                     | 
+                <a href='contact.html'>Contact</a>
+                     | 
+                <a href='http://portal.utoronto.ca' target="_blank">Blackboard</a>
+            </div>
+        </footer>
+
+    </body>
+
+</div>
+<!-- END WRAPPER -->
+
+</html>

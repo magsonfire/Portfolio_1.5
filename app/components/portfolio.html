@@ -1,0 +1,30 @@
+<div class="portfolio">
+	<div class="pbanner-portfolio">
+		<h1 class="ptitle">Portfolio</h1>
+	</div>
+
+	<div id="top" class="port-wrap" ng-controller="portfolioController" ng-init="load();">
+    	<!-- Project Filter Buttons 
+        <div class="categories">
+        	<h5>Filter by Medium of Work:</h5>
+        	
+            <button class="port-cat filter" data-filter="all">All</button>
+            <button class="filter port-cat" 
+                    data-filter=".{{category}}" 
+                    ng-repeat="category in categories">{{category}}</button>
+        </div>-->
+
+        <!-- Portfolio Summary Cards -->
+        <div mix-it-up></div>
+	</div>
+	<!-- End Port-wrap -->
+
+	<div class="last-update">
+		<hr>
+		<h5>Last Updated <b>January 18, 2017</b> at 12:14 am</h5>
+	</div>
+
+    <!-- Google Analytics-->
+    <div ng-include="'app/shared/analytics/ganalytics.html'"></div>
+    <!-- Google Analytics-->
+</div>

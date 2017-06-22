@@ -1,0 +1,30 @@
+<div class="page">
+	<div class="pbanner-floral">
+		<h1 class="ptitle">Page Not Found</h1>
+	</div>
+
+	<div class="wrapper">
+		<h2>It seems something is missing...</h2>
+
+		<h6>Sorry, I couldn't find what you're looking for!</h6>
+
+		<p>Perhaps what you seek can be found on the site map below:</p>
+
+		<h4>Site Map</h4>
+
+		<ul ng-controller="portfolioController">
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a><ul style="padding-bottom: 0;">
+				<li ng-repeat="project in works"><a href="#portfolio/{{project.code}}">{{project.name}}</a></li>
+			</ul></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+	</div>
+
+	<!-- Google Analytics-->
+	<div ng-include="'app/shared/analytics/ganalytics.html'"></div>
+	<!-- Google Analytics-->
+</div>

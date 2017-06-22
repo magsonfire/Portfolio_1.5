@@ -1,0 +1,19 @@
+ErrorDocument 404 http://legacy.anthropology.utoronto.ca/ant100/404.html
+
+# BLOCK 404 MOBILE REQUESTS
+<ifmodule mod_rewrite.c>
+ RewriteCond %{REQUEST_URI} /iphone/?$ [NC,OR]
+ RewriteCond %{REQUEST_URI} /mobile/?$ [NC,OR]
+ RewriteCond %{REQUEST_URI} /mobi/?$ [NC,OR]
+ RewriteCond %{REQUEST_URI} /m/?$ [NC]
+ RewriteRule (.*) - [F,L]
+</ifmodule>
+
+# REDIRECT 404 MOBILE REQUESTS
+<ifmodule mod_rewrite.c>
+ RewriteCond %{REQUEST_URI} /iphone/?$ [NC,OR]
+ RewriteCond %{REQUEST_URI} /mobile/?$ [NC,OR]
+ RewriteCond %{REQUEST_URI} /mobi/?$ [NC,OR]
+ RewriteCond %{REQUEST_URI} /m/?$ [NC]
+ RewriteRule (.*) http://legacy.anthropology.utoronto.ca/ant100/ [R=301,L] 
+</ifmodule>

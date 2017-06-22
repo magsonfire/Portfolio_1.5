@@ -1,0 +1,121 @@
+html {
+  background: url(../img/above-xl.jpg) no-repeat; /* Largest bkg size as default */
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#welcome {
+  width: 100%;
+  height: auto;
+  background-color: rgba(245, 245, 255, 0.4);
+  position: absolute;
+  top: 5%;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 450px;
+  text-align: center;
+}
+
+.logo-box {
+  margin-bottom: 20px;
+}
+
+#logo {
+  width: 200px;
+}
+
+.name {
+  font-size: 1em;
+  color: #8a0a0a;
+}
+
+.tagline {
+  font-size: 1em;
+  color: #c2d69b;
+  margin-bottom: 2.5rem;
+}
+
+.takeoff {
+  margin-bottom: 2.5rem;
+}
+
+.contact {
+  width: 100%;
+}
+
+.connect {
+  margin-bottom: 0.5rem;
+}
+
+.contact-link-wrapper {
+  text-align: center;
+}
+
+.contact-link, .contact-link a {
+  height: 40px;
+  width: 40px;
+  /*border-radius: 40px;*/
+  margin: 0 auto;
+  color: #8a0a0a;
+  font-size: 24px;
+  text-align: center;
+  padding: 2px;
+}
+
+.contact-link:hover {
+  border: solid 2px black;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@media screen and (max-width: 1920px) { /* Specific to this particular image */
+  html {
+    background: url(../img/above-lg.jpg) no-repeat fixed;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1280px) { /* Specific to this particular image */
+  html {
+    background: url(../img/above-md.jpg) no-repeat fixed;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  html {
+    background: url(../img/above-sm.jpg) no-repeat fixed;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 300;
+}
