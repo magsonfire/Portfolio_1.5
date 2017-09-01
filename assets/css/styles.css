@@ -27,7 +27,8 @@
 =================================== */
 html, p, .caption, h1, h2, h3, .h3_sm, h4, .h4_a, nav .ribbon, nav li a, nav .icon, .proj-title, .process-node, h5, button, h6, li, a {
   font-family: "Roboto", Helvetica, Arial, sans serif;
-  font-size: 100%; }
+  font-size: 100%;
+  font-weight: 300; }
 
 /* Headings */
 p, .caption {
@@ -66,7 +67,7 @@ h2 {
   padding-bottom: 0.5em; }
 
 h3, .h3_sm {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1em;
   letter-spacing: 1.5px;
   line-height: 2;
@@ -764,7 +765,8 @@ nav {
   @media screen and (max-width: 1200px) {
     .sum-item {
       padding-left: 10%;
-      min-height: auto; } }
+      min-height: auto;
+      max-width: 400px; } }
   @media screen and (max-width: 990px) {
     .sum-item {
       padding-left: 5%;
@@ -1076,7 +1078,7 @@ nav {
   margin-right: 0.5em;
   margin-bottom: 1em;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 2pt; }
